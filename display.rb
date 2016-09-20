@@ -23,21 +23,13 @@ class Display
     end
   end
 
-  # cursor move test
-  def display_board
-    while true
-    render
-    @cursor.get_input
-    @cursor.cursor_pos
-    end
-  end
+  # # cursor move test
+  # def display_board
+  #   while true
+  #   render
+  #   @cursor.get_input
+  #   @cursor.cursor_pos
+  #   end
+  # end
 
 end
-
-# load "board.rb"
-# load "null_piece.rb"
-# load "piece.rb"
-# load "display.rb"
-# load "cursor.rb"
-d = Display.new(Board.new);
-d.display_board

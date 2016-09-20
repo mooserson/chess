@@ -1,17 +1,15 @@
 require_relative 'slidingpiece'
 require_relative 'piece'
 
-class Queen< Piece
+class Bishop < Piece
   include SlidingPiece
 
   def initialize(color, board, pos)
-    @symbol = color == :white ? SYMBOLS[:white_queen] : SYMBOLS[:black_queen]
+    @symbol = color == :white ? SYMBOLS[:white_bishop] : SYMBOLS[:black_bishop]
     super(color, board, pos)
   end
 
   def move_dirs
-    [:straight, :diagonal]
+    [:diagonal]
   end
-
-
 end

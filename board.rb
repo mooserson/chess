@@ -25,11 +25,9 @@ attr_accessor :grid
     self[*start] = NullPiece.new
   end
 
-  def in_bounds(pos)
-    # debugger
-    if pos.all? { |el| el.between?(0,7) }
-      return true
+  def in_bounds?(pos)
+    pos.all? do |el|
+      el.between?(0,7)
     end
-    false
   end
 end
