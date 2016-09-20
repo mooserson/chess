@@ -1,6 +1,6 @@
 require_relative 'piece.rb'
 require_relative 'null_piece.rb'
-
+#board class
 class Board
 attr_accessor :grid
   def initialize
