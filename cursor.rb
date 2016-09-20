@@ -92,7 +92,6 @@ class Cursor
     temp = [0,0]
     temp[0] = @cursor_pos[0] + diff[0]
     temp[1] = @cursor_pos[1] + diff[1]
-    debugger
     if @board.in_bounds(temp)
       @cursor_pos = temp
     end

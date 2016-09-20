@@ -24,13 +24,13 @@ class Display
   end
 
   # cursor move test
-  # def display_board
-  #   while true
-  #   render
-  #   @cursor.get_input
-  #   @cursor.cursor_pos
-  #   end
-  # end
+  def display_board
+    while true
+    render
+    @cursor.get_input
+    @cursor.cursor_pos
+    end
+  end
 
 end
 
