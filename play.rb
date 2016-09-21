@@ -1,12 +1,12 @@
 load "board.rb"
-# load "display.rb"
-# load "cursor.rb"
-# load 'rook.rb'
-# load 'bishop.rb'
-load 'queen.rb'
+load 'display.rb'
+
+b1 = Board.new
+d1 = Display.new(b1)
+d1.render
 # load "slidingpiece.rb"
-queen = Queen.new(:white, Board.new, [3,3])
-p queen.moves
+# pawn = Pawn.new(:white, Board.new, [3,3])
+# p pawn.moves
 #
 # load "null_piece.rb"
 # load "piece.rb"

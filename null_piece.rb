@@ -1,9 +1,9 @@
 require 'singleton'
-     
+
 class NullPiece
   include Singleton
-  attr_reader :value
+  attr_reader :symbol
   def initialize
-    @value = "| |"
+    @symbol = " "
   end
 end

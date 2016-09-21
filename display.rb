@@ -11,12 +11,14 @@ class Display
   end
 
   def render
+    puts
     board.grid.each_with_index do |row,i|
+
       row.each_with_index do |space,j|
         if @cursor.cursor_pos == [i,j]
-          print board[i,j].value.colorize(:blue)
+          print board[i,j].symbol.colorize(:blue)
         else
-        print board[i,j].value
+        print " #{board[i,j].symbol} "
         end
       end
       puts

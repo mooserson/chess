@@ -17,7 +17,7 @@ class Piece
     :black_pawn => "\u265f",
   }
 
-  attr_reader :value, :color
+  attr_reader :symbol, :color
   attr_accessor :pos
   def initialize(color, board, pos)
     @color = color
@@ -25,8 +25,8 @@ class Piece
     @pos = pos
   end
 
-  def moves
-    moves = []
+  def valid_moves?
+    self.get_valid_moves
   end
 
 
